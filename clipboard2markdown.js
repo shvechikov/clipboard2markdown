@@ -126,8 +126,10 @@
               .replace(/^\s+|[\s\\]+$/g, '');
   };
 
+  var turndownService = new TurndownService();
+
   var convert = function (str) {
-    return escape(toMarkdown(str, { converters: pandoc, gfm: true }));
+    return escape(turndownService.turndown(str, { converters: pandoc, gfm: true }));
   }
 
   var insert = function (myField, myValue) {
