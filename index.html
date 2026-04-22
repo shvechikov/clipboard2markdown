@@ -5,10 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="utf-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self'; font-src 'self'; connect-src 'none'; base-uri 'none'; form-action 'none'">
         <link href="favicon.ico" rel="icon" type="image/x-icon">
         <link rel="stylesheet" href="bootstrap.css">
-        <script src="https://unpkg.com/turndown/dist/turndown.js"></script>
-        <script src="https://unpkg.com/turndown-plugin-gfm/dist/turndown-plugin-gfm.js"></script>
+        <script src="vendor/turndown.js"></script>
+        <script src="vendor/turndown-plugin-gfm.js"></script>
         <script src="clipboard2markdown.js"></script>
         <style>
             h2 {
